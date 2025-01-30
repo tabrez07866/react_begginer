@@ -1,16 +1,13 @@
-import Todo from "./Todo"
-
-
+import Calc from "./Calc"
 
 
 function App() {
  
 
   return (
-  
-    <>
-    <Todo/>
-    </>
+  <div className="container">
+      <Calc />
+  </div>
   )
 }
 
