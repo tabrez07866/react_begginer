@@ -1,0 +1,100 @@
+/* Apply a nice gradient background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Form container */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    
+    /* Slide in from the left */
+    animation: slideInFromLeft 0.8s ease-out;
+}
+
+/* Slide-in animation */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Form heading */
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Scale effect when input is focused */
+input:focus {
+    border-color: #4facfe;
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.4);
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Button hover animation - slight bounce effect */
+button:hover {
+    background: #3b8efc;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(59, 142, 252, 0.4);
+}
+
+/* Button click effect */
+button:active {
+    transform: translateY(1px);
+}
+
+/* Displaying submitted data */
+section {
+    margin-top: 15px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+}
